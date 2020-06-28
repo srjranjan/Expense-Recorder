@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "489238479893",
+    "firebase_url": "https://expense-recorder-9f512.firebaseio.com",
+    "project_id": "expense-recorder-9f512",
+    "storage_bucket": "expense-recorder-9f512.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489238479893:android:784acd5eaa5814b283ba1c",
+        "android_client_info": {
+          "package_name": "com.srj.expenserecorder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "489238479893-fe8r1btvk7csjah8hmug2us1vv7s9tl5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA4eOOwJwjoZfCoSsXWDX_OlYll45rDEqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "489238479893-fe8r1btvk7csjah8hmug2us1vv7s9tl5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
