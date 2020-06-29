@@ -1,12 +1,16 @@
 package com.srj.expenserecorder.activity
 
+import android.app.DatePickerDialog
 import android.app.DatePickerDialog.OnDateSetListener
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.srj.expenserecorder.R
 import com.srj.expenserecorder.modals.Expense
 import kotlinx.android.synthetic.main.activity_add_expense.*
+import java.util.*
 
 class AddExpense : AppCompatActivity() {
     private lateinit var mdateSetListener: OnDateSetListener
@@ -14,6 +18,8 @@ class AddExpense : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_add_expense)
+
+        setDate()
 
 
         btn_save.setOnClickListener {
@@ -39,7 +45,7 @@ class AddExpense : AppCompatActivity() {
         }
     }
 
-  /*  private fun setDate() {
+   private fun setDate() {
         txt_input_date.setOnClickListener {
             val cal = Calendar.getInstance()
             val year = cal[Calendar.YEAR]
@@ -58,13 +64,13 @@ class AddExpense : AppCompatActivity() {
         mdateSetListener =
             OnDateSetListener { _, year, month, dayOfMonth ->
                 var month = month
-                month += 1
+                month+= 1
 
                 val date = "$dayOfMonth/$month/$year"
 
                 txt_input_date.text = date
             }
 
-    }*/
+    }
 
 }
