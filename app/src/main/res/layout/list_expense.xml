@@ -14,8 +14,11 @@
             android:id="@+id/txt_date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
             android:text="TextView"
+            android:textAlignment="viewStart"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/txt_item_name"
             app:layout_constraintHorizontal_bias="0.5"
@@ -26,26 +29,26 @@
             android:id="@+id/txt_item_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
             android:text="TextView"
+            android:textAlignment="viewStart"
             app:layout_constraintBottom_toBottomOf="@+id/txt_date"
             app:layout_constraintEnd_toStartOf="@+id/txt_cost"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txt_date"
-            app:layout_constraintTop_toTopOf="@+id/txt_date"
-            app:layout_constraintVertical_bias="1.0" />
+            app:layout_constraintTop_toTopOf="@+id/txt_date" />
 
         <TextView
             android:id="@+id/txt_cost"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="16dp"
+            android:layout_marginEnd="32dp"
             android:text="TextView"
-            app:layout_constraintBottom_toBottomOf="@+id/txt_item_name"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/txt_item_name"
             app:layout_constraintTop_toTopOf="@+id/txt_item_name"
-            app:layout_constraintVertical_bias="0.0" />
+            app:layout_constraintVertical_bias="0.047" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>

@@ -37,7 +37,7 @@ class DBhandler(context: Context) :
     }
 
     fun getdata(context: Context): ArrayList<Expense> {
-        val query = "Select * From $Table_name"
+        val query = "Select * From $Table_name Order by Date"
         val db = this.writableDatabase
         val cursor = db.rawQuery(query, null)
         val expense2 = ArrayList<Expense>()

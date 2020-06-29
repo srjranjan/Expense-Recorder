@@ -41,11 +41,19 @@ class AddExpense : AppCompatActivity() {
                     MainActivity.dBhandler.addExpenses(this, expense)
                 }
             }
+            clearEdits()
 
         }
+
     }
 
-   private fun setDate() {
+    private fun clearEdits() {
+        txt_input_date.text=""
+        txt_input_item.text.clear()
+        txt_input_cost.text.clear()
+    }
+
+    private fun setDate() {
         txt_input_date.setOnClickListener {
             val cal = Calendar.getInstance()
             val year = cal[Calendar.YEAR]
