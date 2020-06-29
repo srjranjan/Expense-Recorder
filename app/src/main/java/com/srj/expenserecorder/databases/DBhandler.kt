@@ -21,14 +21,14 @@ class DBhandler(context: Context) :
 
         const val Table_name = "Expense"
         const val Col_date = "Date"
-        const val Col_Item_name = "Item Name"
+        const val Col_Item_name = "ItemName"
         const val Col_Amount = "Amount"
 
     }
 
     override fun onCreate(db: SQLiteDatabase?) {
 
-        db?.execSQL("create TABLE $Table_name($Col_date STRING, $Col_Item_name, $Col_Amount INTEGER)")
+        db?.execSQL("create TABLE $Table_name($Col_date STRING, $Col_Item_name STRING, $Col_Amount STRING)")
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
